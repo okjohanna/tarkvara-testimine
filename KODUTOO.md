@@ -3,7 +3,7 @@ Kas dokumentatsioon on täielik ja kirjeldab selgelt nõutud funktsioone ja omad
 Kas iga dokumentatsioonis kirjeldatud aspekt on piisavalt üksikasjalik, et seda koodis kontrollida?
 ___
 
-### 1. Hinna kohta pole piisavalt andmeid
+1. Hinna kohta pole piisavalt andmeid
 
 - Kust tuleb alghind? Kas seda mõjutab auto tüüp (Compact, Electric, Cabrio, Racer), auto vanus, mingi muu tunnus?
 - Kas pikaajalise rendi soodustus Low seasoni ajal rakendub alates 10. või 11. päevast?
@@ -13,7 +13,7 @@ ___
 
 Miinimumhinna määramine vastavalt inimese *vanusele* ei ole väga loogiline ja ilmselt tooks endaga kaasa hulgaliselt kaebusi või peletaks suure osa klientuurist eemale. 
 
-### 2. Nõuete sõnastus ja järjestus võiks olla võimalikult selge ja kergesti arusaadav
+2. Nõuete sõnastus ja järjestus võiks olla võimalikult selge ja kergesti arusaadav
 
 See on vist liigne tähenärimine ja veidi ülesandest mööda, aga näiteks on nende kahe punkti puhul *see, mis määrab millal reegel päriselt kehtib*, sulgudes alles lause lõpus justkui kõrvalmärkusena:
 
@@ -22,22 +22,22 @@ See on vist liigne tähenärimine ja veidi ülesandest mööda, aga näiteks on 
 
 High ja Low seasoni ajavahemikud olid nende vahel eraldi punktidena küll välja toodud, aga pigem võiks need kuskil alguses paika panna. (Nt. Seasons: Low season is Nov 1st - March 31st. High season is Apr 1st - Oct 31st.)
 
-### 3. Mida peaks kalkulaator kuvama, kui kasutaja päring ei vasta dokumentatsioonis olevatele tingimustele?
+3. Mida peaks kalkulaator kuvama, kui kasutaja päring ei vasta dokumentatsioonis olevatele tingimustele?
 
 Dokumentatsioonis pole mainitud midagi veateadete kohta. Pole ka määratud maksimum/miinimum pikkust auto rendile.
 
-### 4. Mis siis kui kasutaja tahab rentida autot 31. märtsist kuni 1. aprillini?
+4. Mis siis kui kasutaja tahab rentida autot 31. märtsist kuni 1. aprillini?
 
 Või isegi pikemaks ajaks nii, et rendi aeg ei jää ainult ühele perioodile. Kalkulaator võiks sellega osata arvestada.
 
-### 5. Praegusest dokumentatsioonist järeldan, et kalkulaatoris peab olema:
+5. Praegusest dokumentatsioonist järeldan, et kalkulaatoris peab olema:
 
 - funktsioon, mis kontrollib rentija vanust ja kas ta tohib valitud auto tüüpi rentida
 - funktsioon, mis tuvastab kasutaja valitud kuupäevade põhjal hooaja (High või Low)
 - funktsioon, mis määrab hinnale teguri (nt. `if (season === "high")` vastab tõele, siis peaks hinda korrutama x1.15)
 - kontroll, mis ei laseks hinnal langeda alla miinimumi (rentija vanus)
 
-### 6. Kas iga dokumentatsioonis kirjeldatud aspekt on piisavalt üksikasjalik, et seda koodis kontrollida?
+6. Kas iga dokumentatsioonis kirjeldatud aspekt on piisavalt üksikasjalik, et seda koodis kontrollida?
 
 - Alla 18 ei rendi - kontrollitav
 - 18-21 ainult Compact - kontrollitav
